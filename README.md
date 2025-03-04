@@ -21,6 +21,8 @@ Integration & Detection
 Loaded the trained model into Python using the Ultralytics YOLO library.
 Processed images/videos to detect potholes with bounding boxes & segmentation masks.
 Displayed the results using OpenCV.
+
+
 📁 Dataset
 Created using Roboflow with manually segmented pothole images.
 Contains multiple road conditions for better model generalization.
