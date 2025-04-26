@@ -1,4 +1,4 @@
-# Base image with Python and OpenCV
+# Use Python base image
 FROM python:3.10-slim
 
 # Set working directory
@@ -11,5 +11,5 @@ COPY . .
 RUN pip install --upgrade pip && \
     pip install -r requirements.txt
 
-# Default command
+# Run your Python script (change the name if needed)
 CMD ["python", "Pothole image_video_code.py"]
