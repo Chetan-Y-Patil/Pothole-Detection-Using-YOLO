@@ -2,12 +2,10 @@ pipeline {
     agent any
 
     stages {
-stage('Clone Repository') {
-    steps {
-        git 'https://github.com/Chetan-Y-Patil/Pothole-Detection-Using-YOLO.git'
-    }
-}
-
+        stage('Clone Repository') {
+            steps {
+                git 'https://github.com/Chetan-Y-Patil/Pothole-Detection-Using-YOLO.git'
+            }
         }
 
         stage('Build Docker Image') {
