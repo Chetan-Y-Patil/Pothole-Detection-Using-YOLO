@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Chetan-Y-Patil/Pothole-Detection-Using-YOLO.git'
+                git branch: 'main', url: 'https://github.com/Chetan-Y-Patil/Pothole-Detection-Using-YOLO.git'
             }
         }
 
