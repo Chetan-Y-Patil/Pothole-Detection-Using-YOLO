@@ -2,24 +2,27 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Repository') {
-            steps {
-                git branch: 'main', url: 'https://github.com/Chetan-Y-Patil/Pothole-Detection-Using-YOLO.git'
-            }
-        }
-
-        stage('Build Docker Image') {
+        stage('Build') {
             steps {
                 script {
-                    docker.build('pothole-app')
+                    // Commands to build your project
+                    echo 'Building the project...'
                 }
             }
         }
-
-        stage('Run Docker Container') {
+        stage('Test') {
             steps {
                 script {
-                    docker.image('pothole-app').run()
+                    // Add your test commands here
+                    echo 'Running tests...'
+                }
+            }
+        }
+        stage('Deploy') {
+            steps {
+                script {
+                    // Add your deployment commands here
+                    echo 'Deploying the project...'
                 }
             }
         }
